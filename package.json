@@ -6,7 +6,7 @@
     "clean": "rimraf dist",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
-    "start": "node devServer.js",
+    "start": "node server.js",
     "lint": "eslint src"
   },
   "repository": {
@@ -51,7 +51,12 @@
     "webpack-hot-middleware": "^2.6.0"
   },
   "dependencies": {
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.1",
+    "jade": "^1.11.0",
+    "morgan": "^1.6.1",
     "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "serve-favicon": "^2.3.0"
   }
 }
